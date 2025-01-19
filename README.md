@@ -2,4 +2,7 @@
 
 
 # Overview
+This repository contains the code, data, and documentation for the final year project titled "Exploring Integration of AI in Initial Distress Support Dialog Model." This project focuses on leveraging Large Language Models (LLMs) to develop an AI-powered chatbot capable of empathetically responding to users experiencing emotional distress.
 The project explores various AI architectures and fine-tuning techniques, including emotion and intent-aware instruct tuning, to improve the chatbot's ability to provide meaningful support. It aims to address the growing mental health challenges globally by offering accessible and empathetic preliminary support.
+
+
