@@ -18,11 +18,11 @@ The project involves the following stages:
 Our research began with a comprehensive review of empathetic AI models for early distress support. Key steps included identifying over 50 papers from databases like Arxiv and Google Scholar, screening 15 for detailed analysis, and synthesizing insights on methodologies, datasets, architectures, and limitations.
 
 **Key Insights**
-- **Emotion recognition:** Essential for empathetic responses.
-- **Fine-grained intents:** Improved nuanced conversations.
-- **Balancing responses:** Emotional and cognitive elements must align.
-- **Challenges in coherence:** Existing models often generate repetitive or inconsistent responses.
-- **Dataset scarcity:** High-quality, domain-specific datasets are limited.
+- Emotion recognition is essential for empathetic responses.
+- Fine-grained intents help improve nuanced conversations.
+- Balancing responses i.e. Emotional and cognitive elements alignment is must.
+- Existing models often generate repetitive or inconsistent responses.
+- High-quality, domain-specific datasets are limited orwe can say inaccessible due to privacy concerns.
   
 **Gaps Identified**
 - **End-to-end integration:** Most approaches use separate modules for emotion recognition, intent classification, and response generation.
@@ -31,18 +31,31 @@ For more details, refer to the Literature Review Section of the [final report]()
 
 
 **2) Model Development:**
+
 **2.1) Initial Prototype Development**
-- Model: Fine-tuned LLaMA 3 on the CounselChat dataset (3,000+ expert Q&A pairs).
-- Results: The prototype lacked emotional understanding, generated generic responses, and struggled with multi-turn conversations.
+- Model: Fine-tuned LLaMA 3(due to it's capabilities , Availability & Efficiency) on the CounselChat dataset (3,000+ expert Q&A pairs).
+- Results: The prototype lacked emotional understanding, generated generic responses, and struggled with multi-turn conversations
+  
+It's notebook is available [here]()
+
+For more details, refer to the **chapter 3.2** of the [final report]()
+
 **2.2) Advanced Model Exploration**
-- MEED2[1]: Integrated emotion embeddings into encoder-decoder architecture, showing a 15% improvement in empathy scores.
-- EPIMEED+[2]: Added cognitive reactions to the emotional responses, dynamically balancing empathy and coherence. However, full implementation was constrained by resource limitations.
+- MEED2[2]: Integrated emotion embeddings into encoder-decoder architecture, showing a 15% improvement in empathy scores.
+  
+- EPIMEED+[3]: Added cognitive reactions to the emotional responses, dynamically balancing empathy and coherence. However, full implementation was constrained by resource limitations.
+  
+for more details,  refer to the literature review or **chapter 3.3** of the [final report]() or review [2] and [3] as referenced below
+ 
 **2.3) Custom Model Development**
+
 - Modified LLaMA Architecture: Included emotion embeddings for nuanced understanding in LLaMA architecture but faced challenges like increased parameters and memory constraints,so had to drop this plan .
+  
 **2.4) Alternative Fine-Tuning Approach**
 - Emotion and Intent-Aware Tuning: Leveraged a dataset with 32 emotions (e.g., "joyful," "anxious") and 9 intents (e.g., "encouraging," "consoling") .
 - Added structured input prompts to explicitly guide the model's emotional understanding and intent prediction.
 Still didnot get proper empathetic cognitive responses as we wanted.
+
 **2.5) Final Implementation**
 During the work a new free open source LLM [LLaMA 3.1](https://ai.meta.com/blog/meta-llama-3-1/) was introduced so decided to give it a try
 - Model: Transitioned to LLaMA 3.1 Instruct, emphasizing instruction tuning for enhanced performance without extensive fine-tuning.
@@ -51,7 +64,8 @@ Emotion recognition, Mirroring, Perspective-taking, Active listening, Tailored r
 - Process:
  Compiled detailed instructions with context for better response generation.
  Evaluated outputs for empathy, context adherence, and safety.
-**2.6) Architectural Highlights
+
+**2.6) Architectural Highlights**
 - Baseline: Fine-tuned LLaMA 3 with basic emotional context.
 - MEED2: Added pre-trained emotion classifiers for embedding generation.
 - EPIMEED+: Combined emotion and cognitive aspects via dual encoders.
