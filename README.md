@@ -21,7 +21,6 @@ The project involves the following stages:
  - Baseline: Fine-tuned LLaMA 3 on CounselChat.
  - Advanced: Emotion and intent-aware instruct fine-tuning.
  - Final: Transition to LLaMA 3.1 Instruct with improved instructions.
- - 
 4 **Evaluation(TO BE DONE YET):**
  - Empathy and response diversity metrics.
  - Safety compliance for crisis situations.
