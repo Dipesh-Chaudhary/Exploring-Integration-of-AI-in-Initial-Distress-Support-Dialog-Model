@@ -41,4 +41,4 @@ We thank our supervisor, Er. Shailesh Pandey, and the Department of IT, Everest 
 
 [2] Xie, Y., & Pu, P. (2021). Empathetic Dialog Generation with Fine-Grained Intents. *ArXiv*, abs/2105.06829. [Link](https://arxiv.org/abs/2105.06829)
 
-[3] Welivita, A., & Pu, P. (2023). Empathetic Response Generation for Distress Support. *Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (ACL)*, 632–644. [Link](https://arxiv.org/abs/2303.08123)
+[3] Welivita, A., & Pu, P. (2023). Empathetic Response Generation for Distress Support. *Proceedings of the 24th Annual Meeting of the Special Interest Group on Discourse and Dialogue (ACL)*, 632–644. [Link](https://aclanthology.org/2023.sigdial-1.59/)
